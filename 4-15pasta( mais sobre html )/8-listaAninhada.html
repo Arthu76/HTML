@@ -1,0 +1,116 @@
+<h1>Projeto</h1>
+<ul class="tree">
+  <li>
+    <button id="button1">Backend</button>
+    <ul>
+      <div id="lista">
+        <li>
+          <button id="buttonCont">app</button>
+          <ul id="conteudo">
+            <li>produto.js</li>
+            <li>usuario.js</li>
+            <li>venda.js</li>
+          </ul>
+        </li>
+        <li >
+            <button id="buttonCont2">config</button>
+            <ul id="conteudo2">
+                <li>banco.js</li>
+                <li>rotas.js</li>
+                <li>servidor.js</li>
+            </ul>
+        </li>
+        
+    </div>
+</ul>
+</div>
+</li>
+<li>
+    <button id="button2">Frontend</button>
+    <ul id="lista2">
+      <li >
+        <button id="buttonCont3">public</button>
+        <ul id="conteudo3">
+          <li>app.css</li>
+          <li>app.js</li>
+          <li>index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" >
+
+<style>
+  button{
+    border: none;
+    background-color: white;
+  }
+
+  #lista{
+    display: none;
+  }
+
+  #conteudo #conteudo2{
+    display: none;
+  }
+</style>
+
+<script >
+   let botao = document.getElementById('button1');
+   let botao2 = document.getElementById('button2');
+   let lista = document.getElementById('lista');
+   let lista2 = document.getElementById('lista2');
+
+  botao.addEventListener('click', function() {
+    if (lista.style.display == 'block') {
+      lista.style.display = 'none';
+    } else {
+      lista.style.display = 'block';
+    }
+    });
+
+  botao2.addEventListener('click', function() {
+    if (lista2.style.display == 'block') {
+      lista2.style.display = 'none';
+    } else {
+      lista2.style.display = 'block';
+    }
+    });
+
+  
+  let botaoCont = document.getElementById('buttonCont')
+  let conteudo = document.getElementById('conteudo')
+  let botaoCont2 = document.getElementById('buttonCont2')
+  let conteudo2 = document.getElementById('conteudo2')
+  let botaoCont3 = document.getElementById('buttonCont3')
+  let conteudo3 = document.getElementById('conteudo3')
+
+  botaoCont.addEventListener('click', function() {
+    if (conteudo.style.display == 'block') {
+      conteudo.style.display = 'none';
+    } else {
+      conteudo.style.display = 'block';
+    }
+    });
+
+    botaoCont2.addEventListener('click', function() {
+    if (conteudo2.style.display == 'block') {
+      conteudo2.style.display = 'none';
+    } else {
+      conteudo2.style.display = 'block';
+    }
+    });
+
+    botaoCont3.addEventListener('click', function() {
+    if (conteudo3.style.display == 'block') {
+      conteudo3.style.display = 'none';
+    } else {
+      conteudo3.style.display = 'block';
+    }
+    });
+
+
+  
+</script>
